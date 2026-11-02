@@ -16,9 +16,7 @@
 > Share the “aha!” moments, they matter more that the visuals
 
 - As a traveler who values privacy and exclusivity, are you better off sticking with a secluded gem for your next vacay? 
-
 - If yes, do secluded gems generally offer better privacy and exclusivity compared to commercial hubs?
-
 - Does privacy & exclusivity directly affect visitor satisfaction?
 
 4. How would a business or a community (for Social Impact Projects) benefit from your work?
@@ -26,5 +24,4 @@
 > That’s your **real value**
 
 - Travel agents can use this data to better advise clients who prioritise privacy and exclusivity
-
 - As an owner of a small 10-room lodge in Watamu or Lamu, I can use this data to help compete against big 200-room resorts

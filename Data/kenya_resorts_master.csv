@@ -1,0 +1,169 @@
+ResortName,Address,WaterBodyType,Location,Latitude,Longitude,GoogleRating,BarsCount,NightClubsCount,TransitCount,WorshipCount,TotalNoiseSources
+Diani Reef Beach Resort & Spa,"Diani Beach Road, Diani Beach, Kenya",Marine Coast,Coast - Diani & South,-4.2789029,39.5932567,4.3,11,3,0,1,15
+Swahili Beach Resort,"Ukunda, Diani Beach Road, Kwale, Kenya",Marine Coast,Coast - Diani & South,-4.292183,39.586675,4.4,11,1,0,3,15
+Diamonds Leisure Beach & Golf Resort,"Diani Road, South, Coast, Kwale, Kenya",Marine Coast,Coast - Diani & South,-4.281404500000001,39.5920698,4.4,9,3,0,2,14
+Coral Beach Resort,"Diani Beach, Kenya",Marine Coast,Coast - Diani & South,-4.2891936,39.5897397,4.1,5,0,0,2,7
+Southern Palms Beach Resort,"Plot LR 13430, Diani Beach Road Diani, Ukunda, Kenya",Marine Coast,Coast - Diani & South,-4.268263699999999,39.5970049,4.3,10,2,0,3,15
+The Villa Luxury Suites Hotel,"Off Diani Beach Road, Diani Beach, Kenya",Marine Coast,Coast - Diani & South,-4.2872271,39.5847249,4.6,8,0,0,6,14
+Jacaranda Indian Ocean Beach Resort,"Jacaranda Indian Ocean Beach Resort Diani, Diani Beach Road, Diani, Kenya",Marine Coast,Coast - Diani & South,-4.261761799999999,39.59544,4.3,4,0,0,3,7
+Tombo House,"Diani Beach Road, Diani Beach, Kenya",Marine Coast,Coast - Diani & South,-4.2755383,39.5889014,4.8,12,3,0,1,16
+The Maji Beach Boutique Hotel,"Diani Beach Road, Ukunda, Kenya",Marine Coast,Coast - Diani & South,-4.276241199999999,39.5940109,4.6,11,3,0,1,15
+Bahari Dhow Beach Villas,"Diani, Diani Beach Road, Diani Beach, Kenya",Marine Coast,Coast - Diani & South,-4.271643,39.5945764,4.1,13,3,0,1,17
+Kaskazi Beach Resort,"Opposite Nakumatt - Diani, Next To Swahili Beach Hotel, Ukunda Diani Beach Rd, Diani Beach, Kenya",Marine Coast,Coast - Diani & South,-4.2935937,39.5863427,4.0,11,1,0,3,15
+Soroi Blue Diani Beach,"Golden beach rd, Ukunda, Kenya",Marine Coast,Coast - Diani & South,-4.271843,39.597075,4.6,12,3,0,1,16
+Morning Star Diani Beach Resort,"Diani Beach Road, Msambweni, Kenya",Marine Coast,Coast - Diani & South,-4.2771883,39.5915103,4.3,11,3,0,1,15
+Aqua Resort,"Diani Beach Road, Diani Beach, Kenya",Marine Coast,Coast - Diani & South,-4.272937,39.5936968,4.3,13,3,0,1,17
+Leopard Beach Resort and Spa,"Diani Beach, Kenya",Marine Coast,Coast - Diani & South,-4.2841087,39.58923130000001,4.4,9,1,0,2,12
+Watano beach house,"Diani Beach Rd Msambweni, Mombasa, Kenya",Marine Coast,Coast - Diani & South,-4.2994413,39.5843719,4.4,10,1,1,2,14
+Alfajiri Villas,"Majengo Mvita, Diani Beach, Kenya",Marine Coast,Coast - Diani & South,-4.286725,39.5895927,4.7,8,1,0,2,11
+Pendo Villas Diani,"Next To Ukunda Air Strip, Off, Diani Beach, Kenya",Marine Coast,Coast - Diani & South,-4.299223,39.57338,4.6,7,0,1,3,11
+PrideInn Hotel Diani,"Ukunda, Kenya",Marine Coast,Coast - Diani & South,-4.2879887,39.58126130000001,4.6,13,1,0,6,20
+DianiKwetu Resort,"Kwetu Road, Diani Beach Road, Diani Beach, Kenya",Marine Coast,Coast - Diani & South,-4.2697549,39.5921969,4.9,11,2,0,2,15
+Nyali Beach Holiday Resort,"Bungalows Rd, Mombasa, Kenya",Marine Coast,Coast - Mombasa & North,-4.043556,39.71156999999999,4.2,5,1,0,3,9
+Voyager Beach Resort,"Off Mt Kenya Road, Mombasa, Kenya",Marine Coast,Coast - Mombasa & North,-4.0352301,39.7154262,4.5,7,1,2,5,15
+"Tamarind Village,Mombasa","Cement Silo rd, Mombasa, Kenya",Marine Coast,Coast - Mombasa & North,-4.049136,39.681832,4.5,15,2,0,15,32
+The Reef Hotel Mombasa,"Mount Kenya Rd, Mombasa, Kenya",Marine Coast,Coast - Mombasa & North,-4.0283826,39.7195086,4.1,13,7,2,6,28
+Cocoa Boutique Hotel,"Baracks Road, off Golf, Links Rd, Mombasa, Kenya",Marine Coast,Coast - Mombasa & North,-4.0387878,39.7150917,4.3,3,0,1,3,7
+Sun Africa Hotel,"XP67+HRG, Mount Kenya Rd, Mombasa, Kenya",Marine Coast,Coast - Mombasa & North,-4.0385637,39.714573,4.2,3,0,1,3,7
+Hotel Englishpoint Mombasa,"Silos Road, Mombasa, Kenya",Marine Coast,Coast - Mombasa & North,-4.0584769,39.684586,4.5,5,0,2,15,22
+The Charming Lonno Lodge Watamu,"Kanani RD - Malindi - Kilifi District KE, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3386008,40.0469402,4.8,1,0,0,0,1
+"Jacaranda Beach Resort, Watamu","Kanani Road, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3154181,40.077985,4.4,2,1,0,0,3
+Crystal Bay Resort,"Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3489567,40.0262108,4.5,15,2,0,6,23
+Travellers Inn Resort Malindi KENYA,"B8 Malindi Mombasa Highway, Stage yamaembe, Near Msbaha, Malindi, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.2561416,40.0606445,3.7,1,0,0,0,1
+Twiga Beach Resort,"New Jacaranda Road, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3162257,40.0822924,4.1,2,1,0,0,3
+Kivulini Beach Resort (Kivulini Luxury Resort),"Watamu, Casuarina Rd, Kilifi, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.274497,40.122982,3.7,0,0,0,0,0
+Flamingo Villas Resort,"Marine National Park, Malindi, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.2747649,40.1210994,4.2,0,0,0,0,0
+Simba Wa Kale Luxury Suites & Beach,"Jacaranda Road, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.317155,40.0812556,4.7,2,1,0,0,3
+Jua Resort Watamu,"in Rafiki Tamu Residential Resort, Jacaranda Road, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3433183,40.0255902,4.8,10,0,0,5,15
+Life Resort St. Thomas Royal Palm,"Jacaranda Road Kembe Kimbabamshe 367, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3079783,40.0961794,4.0,1,0,0,0,1
+"The Beach House, Malindi","Casuarina Rd, Malindi, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.2989388,40.1104402,4.6,2,0,0,0,2
+Exploreans Beach Club & Villas Watamu,"Mayungu road, Malindi, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3002413,40.1044634,4.3,2,0,0,0,2
+Rafiki Tamu Residential Resort,"Jacaranda Road, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3439353,40.0260393,4.6,10,0,0,4,14
+7 Islands Resort Watamu,"Watamu Jacaranda Rd Kilifi North, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3442069,40.0307129,4.3,8,0,0,3,11
+"Jumbo Resort, Watamu","M3MG+MVF, Kanani Road, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3158031,40.0771705,4.4,2,1,0,0,3
+Mawe Resort Watamu - Boutique Hotel,"Watamu, Jacaranda, Kilifi, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.350745,40.018354,4.5,20,3,0,15,38
+The One Watamu Bay,"Kanani Road, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3195517,40.0714621,4.2,1,1,0,0,2
+Diamond Luxury Homes watamu,"Jacaranda Road, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3393811,40.0285511,2.9,5,0,0,5,10
+Kioo Villas,"Jacaranda Road, Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3413543,40.03436689999999,5.0,5,0,0,2,7
+Baobab Village,"Watamu, Kenya",Marine Coast,Coast - Watamu & Malindi,-3.3420759,40.0389786,4.4,5,0,0,0,5
+The Majlis Hotel Lamu,"Ras Kitau Bay - Manda Island Lamu Archipelago, Kenya",Marine Coast,Coast - Lamu,-2.2979749,40.9226301,4.5,0,0,0,1,1
+Shela Bliss,"PW57+37W, Shela, Kenya",Marine Coast,Coast - Lamu,-2.2922727,40.9131979,5.0,3,0,0,2,5
+Banana House And Wellness Centre,"Plot 318, Lamu Island, Shela, Kenya",Marine Coast,Coast - Lamu,-2.2921493,40.9134108,4.6,3,0,0,2,5
+Forodhani House - Shela (Lamu),"Shela, Kenya",Marine Coast,Coast - Lamu,-2.2943547,40.916128,4.7,3,0,0,2,5
+Dhow House,"Shela, Kenya",Marine Coast,Coast - Lamu,-2.2916144,40.9131198,5.0,3,0,0,2,5
+Beytul Habaib,"Lamu, Kenya",Marine Coast,Coast - Lamu,-2.2608179,40.8987625,4.7,0,0,0,16,16
+"Shiban House, Shela Beach","Shela Beach- Opp. Shela Primary school Island KE, Shela, Kenya",Marine Coast,Coast - Lamu,-2.2929099,40.9130849,4.8,3,0,0,2,5
+Tulia House Lamu,"PW47+G3V, Shela, Kenya",Marine Coast,Coast - Lamu,-2.2936375,40.9126719,5.0,3,0,0,2,5
+Furaha House,"Furaha House, Shela, Kenya",Marine Coast,Coast - Lamu,-2.2945633,40.9158383,4.8,3,0,0,2,5
+Peponi Hotel Lamu - Kenya,"PW48+39F Lamu Island, Shela, Kenya",Marine Coast,Coast - Lamu,-2.2948223,40.9159851,4.5,3,0,0,2,5
+Marquezy Guest House – Home stay,"Off Corniche Path, Shela, Kenya",Marine Coast,Coast - Lamu,-2.2875196,40.9120418,4.7,4,0,0,2,6
+Msafini Hotel,"Shela, Kenya",Marine Coast,Coast - Lamu,-2.2929424,40.91376349999999,4.0,3,0,0,2,5
+Manda Bay Lodge,"Manda Island, Kenya",Marine Coast,Coast - Lamu,-2.2230595,40.9674932,4.5,0,0,0,0,0
+Lamu Creek Hotel,"PVRX+4JV, Lamu, Kenya",Marine Coast,Coast - Lamu,-2.2606278,40.8990831,5.0,0,0,0,13,13
+Wiyoni Royals Lamu,"Wiyoni, Lamu, Kenya",Marine Coast,Coast - Lamu,-2.2695567,40.9006225,4.8,0,0,0,29,29
+Baytil Ajaib Boutique Hotel,"Neighbourhood, Lamu, Kenya",Marine Coast,Coast - Lamu,-2.2667937,40.9004097,4.7,0,0,0,25,25
+Pwani House - Lamu Seafront,"Kenyatta Rd, Lamu, Kenya",Marine Coast,Coast - Lamu,-2.2656863,40.9014615,4.5,0,0,0,22,22
+Shela White House,"Next to Faraha House, Malindi, Kenya",Marine Coast,Coast - Lamu,-2.294528,40.915518,4.3,3,0,0,2,5
+"Chuchungi House - The Safari Series, Lamu","Kizingoni, Kenya",Marine Coast,Coast - Lamu,-2.3336725,40.8178118,5.0,1,0,0,0,1
+Jahazi House Lamu,"Kizingoni, Kenya",Marine Coast,Coast - Lamu,-2.3335572,40.8159724,5.0,1,0,0,0,1
+Enashipai Resort & Spa,"Moi S Lake Rd, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.7707174,36.4303642,4.7,6,0,0,7,13
+Lake Naivasha Resort,"Moi S Lake Rd, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.7595346,36.4353643,4.5,3,1,0,2,6
+Lake Naivasha Sopa Resort,"Sulmac Village, Kenya",Inland Lake,Inland Lake - Naivasha,-0.8111634,36.391874,4.7,0,0,0,0,0
+Lake Naivasha Country Club,"Off Moi S Lake Road, Karagita, Kenya",Inland Lake,Inland Lake - Naivasha,-0.7720575000000001,36.42104339999999,4.3,2,0,0,0,2
+Osotua Luxury Resort by ICON,"114 Moi S Lake Rd, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.8264943,36.332499,4.3,1,0,1,8,10
+Burch's Resort Naivasha,"Moi South Lake Rd, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.7620897,36.4317205,4.0,3,2,0,2,7
+Sawela Lodge,"Moi S Lake Rd, Kenya",Inland Lake,Inland Lake - Naivasha,-0.8097264,36.4042069,4.5,0,0,0,0,0
+Great Rift Valley Lodge & Golf Resort,"Moi North Lake Road, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.6674825,36.3213617,4.6,0,0,0,0,0
+Loldia House,"kasarani, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.7174645,36.3261337,4.6,0,0,0,0,0
+Montana Resort Naivasha,"Naivasha Town, Moi Avenue next to Coop Bank, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.7131284999999999,36.4304966,3.9,20,7,6,22,55
+Camp Carnelley's,"Moi S lake rd, Sulmac Village, Kenya",Inland Lake,Inland Lake - Naivasha,-0.8284336999999999,36.3374432,4.3,1,0,1,8,10
+"The Nest Boutique, Naivasha","6CQM+2H Karagita, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.7624375,36.4339375,4.3,3,2,0,2,7
+Naivasha Kongoni Lodge,"Naivasha Kongoni Lodge off Moi North Lake Road Naivasha, Kongoni Lodge, Nakuru, Kenya",Inland Lake,Inland Lake - Naivasha,-0.8141225999999999,36.2580271,4.3,5,0,0,3,8
+Fish Eagle Inn & Campsite,"58FM+GJ4 Lake Naivasha, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.8262396999999999,36.3340729,4.1,1,0,1,8,10
+Bilashaka Lodge,"Kenya, Kasarani, Kenya",Inland Lake,Inland Lake - Naivasha,-0.7218,36.29671,4.4,0,0,0,2,2
+Leisure Apex Resort Naivasha,"Moi South Lake Road, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.7638668,36.4337802,4.1,3,2,0,2,7
+Naivasha West Beach Camp,"57M6+H6J Kongoni, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.8160624999999999,36.2605625,4.4,4,0,0,2,6
+Hippo Safaris Resort,"6CQG+776, Moi S Lake Rd, Naivasha, Kenya",Inland Lake,Inland Lake - Naivasha,-0.7618436,36.42565099999999,3.9,3,1,0,0,4
+Natures Camp Naivasha,"Moi South Lake, Kenya",Inland Lake,Inland Lake - Naivasha,-0.7908737000000001,36.407931,4.2,0,0,0,0,0
+Crayfish Camp,"Lake View, Moi S Lake Rd, Nakuru, Kenya",Inland Lake,Inland Lake - Naivasha,-0.831704,36.352627,3.9,4,0,0,0,4
+Sarova Lion Hill Game Lodge: Kenya Safari Lodge in Lake Nakuru National Park,"Lake Nakuru National Park, Off Old Nairobi Road, Nakuru County, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.3464305,36.1216599,4.6,0,0,0,0,0
+Liaizons Hotel Nakuru,"Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.2978829000000001,36.0780944,3.8,20,7,1,27,55
+The Cliff Nakuru,"J3J4+H76, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.368595,36.0556267,4.8,0,0,0,0,0
+Eldorado Rustic Hotel & Gardens,"Pipeline, Opposite Sahota Body works, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.3140585,36.1347741,4.7,2,0,1,4,7
+Lanet Matfam Resort,"Dundori Rd, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.296715,36.1449132,4.0,5,0,2,5,12
+Ivory Park Hotel - Safari water world,"Flamingo Rd, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.2995822,36.078146,4.3,20,7,1,25,53
+"Marlin guest resort, Nakuru","off General Kariba Street. Opposite Deliverance Church, Main Church, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.2989125,36.0695661,4.1,20,5,1,22,48
+Kivu Resort,"Flamingo Rd, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.3014813,36.0808528,3.9,20,6,1,25,52
+Lion Hill Place,"Caleb Muibu Road, Next to Lake Nakuru National Park, Lanet gate, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.3112984,36.1316099,4.6,0,0,1,3,4
+Lake Nakuru Flamingo Resort & Spa,"Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.315409,36.1376331,4.1,5,0,1,7,13
+Golden Palace Resort Nakuru,"London, off Kanu St, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.301467,36.071999,4.0,20,8,1,25,54
+Zillian Park Hotel,"Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.2999062,36.0648553,3.8,20,6,0,22,48
+"The Ole-Ken Hotel, Nakuru","West Rd, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.2888988,36.0633015,4.4,20,12,3,23,58
+Lake Nakuru Lodge,"Lake Nakuru National Park, Kenya",Inland Lake,Inland Lake - Nakuru,-0.4224324,36.1299881,4.4,0,0,0,0,0
+Hotel Royal Spring,"M3XG+XPQ Royal Spring Hotel, Kanu St, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.300114,36.076879,3.8,20,7,1,24,52
+Atlantis BnB,"Kinuthia Mbugua, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.2901361,36.0913849,4.8,10,1,1,23,35
+Hotel Marvin,"Kalewa Rd, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.2965551,36.0784136,4.0,20,8,1,27,56
+Sundowner Lodge,"M3W9+MRG, Nakuru, Kenya",Inland Lake,Inland Lake - Nakuru,-0.3033155,36.0695878,3.9,20,3,0,22,45
+Top Cliff Lodge,"Highway, Top Cliff Lodge, along, Nairobi, Kenya",Inland Lake,Inland Lake - Nakuru,-0.2920353,36.1251062,4.1,20,1,0,22,43
+Leopard View Hotel,"944, Free Hold, Kenya",Inland Lake,Inland Lake - Nakuru,-0.3012368,36.0715032,3.9,20,8,1,25,54
+Lake Elementaita Mountain Lodge,"JASMINE LANE, Mbaruk Rd, Kenya",Inland Lake,Inland Lake - Elementaita,-0.3840767,36.262067,4.4,0,0,0,2,2
+Olive Lake Elementaita Lodge,"sentrime elementaita resort, Nairobi - Nakuru Hwy, Elementaita, Kenya",Inland Lake,Inland Lake - Elementaita,-0.431299,36.2538125,4.8,0,0,0,1,1
+Tree House lodge,"Rive sud lac Elementaita, Kenya",Inland Lake,Inland Lake - Elementaita,-0.4759629,36.2663937,5.0,0,0,0,0,0
+Oasis Eco Camp,"On Road 204, Gilgil, Kenya",Inland Lake,Inland Lake - Elementaita,-0.4755472,36.266872,4.2,0,0,0,0,0
+Lake Elementaita Manor,"Lake Elementaita, Kenya",Inland Lake,Inland Lake - Elementaita,-0.4634808,36.275209,4.6,2,0,0,0,2
+Capella Resort,"Mbaruk Rd, Nakuru, Kenya",Inland Lake,Inland Lake - Elementaita,-0.3940832,36.2576299,4.5,0,0,0,0,0
+Brooks Lodge & Spa Gilgil,"Gilgil-Nyahururu Road, Gilgil, Kenya",Inland Lake,Inland Lake - Elementaita,-0.4864632,36.3679349,4.4,0,0,0,0,0
+Sentrim Elementaita Resort,"Sentrim Elementaita Resort, Elmenteita, Kenya",Inland Lake,Inland Lake - Elementaita,-0.4338325,36.2494497,4.4,0,0,0,0,0
+Punda Milias,"Nairobi - Nakuru Hwy, Kenya",Inland Lake,Inland Lake - Elementaita,-0.3655276,36.1737954,4.6,0,0,0,0,0
+Brownie's Guesthouse,"Lockwood Estate, Greensteds Area, Off Nairobi Nakuru Highway, Nakuru County, M57F+82J, Nakuru, Kenya",Inland Lake,Inland Lake - Elementaita,-0.3366511,36.1725299,4.3,3,0,0,1,4
+Spanish Restaurant and Lodge Gilgil,"G82F+68Q, Nyahururu Road, Gilgil, Kenya",Inland Lake,Inland Lake - Elementaita,-0.499423,36.32336,2.9,20,4,4,21,49
+Elementaita Bandas Resort And Retreat,"Nakuru East Nairobi, Nakuru Highway, Nakuru, Kenya",Inland Lake,Inland Lake - Elementaita,-0.4636238,36.2901029,4.2,2,1,0,1,4
+Elementaita Oldonyo Lodge,"Landhies Rd, Nakuru, Kenya",Inland Lake,Inland Lake - Elementaita,-0.4268143,36.2490507,3.3,0,0,0,0,0
+Hallel Guest House,"M56F+966, off Nairobi - Nakuru Hwy, Nakuru, Kenya",Inland Lake,Inland Lake - Elementaita,-0.3390625,36.1730625,5.0,3,0,0,3,6
+Kika Lodge,"Nyahururu Rd, Gilgil, Kenya",Inland Lake,Inland Lake - Elementaita,-0.4869424,36.365215,4.0,0,1,0,0,1
+Eugene homes guest and Bnb,"Nakuru, Kenya",Inland Lake,Inland Lake - Elementaita,-0.4803584999999999,36.2961497,4.8,14,0,0,7,21
+Flavours Lodge,"M4JV+MCJ, Nakuru, Kenya",Inland Lake,Inland Lake - Elementaita,-0.3182962,36.1435034,4.0,15,1,0,21,37
+OLDONYO LODGE ELEMENTAITA,"Ruiru, Kenya",Inland Lake,Inland Lake - Elementaita,-0.4511874,36.2651592,4.0,0,0,0,0,0
+Elementaita lodge,"Mbaruk Rd, Nakuru, Kenya",Inland Lake,Inland Lake - Elementaita,-0.3228951,36.1705026,5.0,0,0,0,0,0
+HAPO LODGE,"NAKURU- NAIROBI HIGHWAY, KIKOPEY, KENYA KIKOPEY, G7GR+2FM, Nairobi - Nakuru Hwy, Gilgil, Kenya",Inland Lake,Inland Lake - Elementaita,-0.4749171,36.2911856,,15,0,0,8,23
+"Acacia Premier Hotel, Kisumu","Achieng' Oneko Rd, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.1072263,34.7516075,4.5,20,13,9,21,63
+Selella Resort,"WQ22+377 Kisumu along Oginga Odinga Street, off Marine/Port Road, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.0998125,34.7506875,4.2,20,15,12,21,68
+Dunga Lakeside Resort,"VP8V+W36, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.1327233,34.7426556,4.1,7,0,0,8,15
+Kiboko Bay Resort,"Dunga Beach, Dunga Rd, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.1304585,34.7416021,4.2,7,0,0,6,13
+Lago Resort,"Riat College Road, Riat Hills, WQQ7+9FC, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.0591325,34.7631694,4.3,0,0,0,4,4
+"Sarova Imperial Hotel, Kisumu","Achieng' Oneko Rd, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.1043448,34.755401,4.2,20,20,18,30,88
+Milimani Beach Resort Dunga Kisumu City,"Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.139702,34.7348076,4.1,3,0,0,8,11
+Vittoria Suites,"Milimani, Kisumu, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.1210191,34.7535702,4.3,14,0,3,20,37
+The Vic Hotel,"Nairobi Rd, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.1062587,34.7712484,4.3,15,2,1,20,38
+Villa Winga Guesthouse,"Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.0509962,34.77745100000001,4.7,0,0,0,4,4
+Fairways Hotel Kisumu,"Lake Basin Mall, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.0658427,34.773463,4.4,3,2,0,11,16
+Miriu River Resort,"Apoko Market, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.0917016,34.7679568,4.9,20,6,2,31,59
+Dunga Hill Camp,"Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.1370877,34.7384252,4.3,7,0,0,10,17
+The Sunset Hotel,"VPPW+94M Impala Walk, Aput Ln, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.1136055,34.7456436,3.8,9,3,1,5,18
+"The Grand Royal Swiss Hotel, Kisumu","Riat, Kisumu-Kakamega, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.0396779,34.7600408,4.4,4,1,0,9,14
+Desert Rose Resort-Kisumu,"XQ58+3JV, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.0423125,34.7665625,4.1,5,1,0,4,10
+Pinecone Hotel,"Market Milimani Kisumu along Dakar road, Nyerere Rd, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.08584109999999999,34.7660806,4.2,20,3,3,31,57
+Sovereign Hotel,"Lolwe Drv, Aput Ln, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.1123174,34.7476391,4.4,15,5,1,7,28
+Lovely Garden Guest Home (LGGH),"Mkendwa, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.03997589999999999,34.7523831,4.4,3,1,0,7,11
+Wigot Gardens Hotel Kisumu,"Kisumu-Kakamega Road, Kisumu, Kenya",Inland Lake,Inland Lake - Victoria,-0.0518354,34.7801314,4.2,12,0,0,9,21
+Mara River Lodge,"Mara River Lodge Drive Lemek Conservancy, Kenya",Safari River,Safari River Lodge,-1.1402391,35.1408434,4.1,0,0,0,0,0
+Sand River Masai Mara by Elewana,"Keekorok, Kenya",Safari River,Safari River Lodge,-1.6194078,35.161724,4.8,0,0,0,0,0
+Ashnil Mara Camp,"Maasai Mara, Kenya",Safari River,Safari River Lodge,-1.4647856,35.0434837,4.6,0,0,0,0,0
+Mara Sweet Acacia Lodge,"Masai Mara, Talek, Kenya",Safari River,Safari River Lodge,-1.4576508,35.2546207,4.1,0,0,0,0,0
+Mara Maisha Camp,"CIS-MARA/TALEK/419 CIS-MARA/TALEK/420, Talek, Kenya",Safari River,Safari River Lodge,-1.4130198,35.2224697,4.7,0,0,0,0,0
+AA Lodge Masai Mara,"Maasai Mara National Reserve, Kenya",Safari River,Safari River Lodge,-1.4821324,35.1299896,3.8,0,0,0,0,0
+JW Marriott Masai Mara Lodge,"Maasai Mara National Reserve, River, Talek, Kenya",Safari River,Safari River Lodge,-1.4633721,35.2676609,4.7,0,0,0,0,0
+Pristine Mara Bay Lodge,"Kenya, Narok, Kenya, East AfricaBeside Mara River, Maasai Mara National Reserve",Safari River,Safari River Lodge,-1.4867393,35.0322564,4.9,0,0,0,0,0
+Enkorok Mara Camp Limited,"999H+5F, Ololaimutiek Village, Kenya",Safari River,Safari River Lodge,-1.6320625,35.3786875,4.6,0,0,0,0,0
+Jambo Mara Safari Lodge,"C 12, Ololaimutiek Village, Kenya",Safari River,Safari River Lodge,-1.5946506,35.384141,4.2,0,0,0,0,0
+Mara Serena Safari Lodge,"The Mara Triangle Conservancy, Maasai Mara Game Reserve, Serena, Kenya",Safari River,Safari River Lodge,-1.4022113,35.0261578,4.6,0,0,0,0,0
+Royal Mara Safari Lodge,"Mara North Conservancy, Mara Rianta, Kenya",Safari River,Safari River Lodge,-1.1415042,35.0969519,4.7,0,0,0,0,0
+"Karen Blixen Camp, Mara North Conservancy, Masai Mara","C13, Mara North Conservancy, Mara Rianta, Kenya",Safari River,Safari River Lodge,-1.187604,35.0575186,4.6,0,0,0,0,0
+Mara Leisure Camp,"Masai Mara National Reserve, Talek, Kenya",Safari River,Safari River Lodge,-1.4594817,35.2506103,4.2,0,0,0,0,0
+Tipilikwani Mara Camp,Kenya,Safari River,Safari River Lodge,-1.462008,35.2443139,4.6,0,0,0,0,0
+Loyk Mara Camp,"M5JG+79M, Unnamed Road, Talek, Kenya",Safari River,Safari River Lodge,-1.3192835,35.1759082,4.8,0,0,0,0,0
+Soroi Mara Bush Camp,"H4W6+P94, Serena, Kenya",Safari River,Safari River Lodge,-1.4031875,35.1109375,4.8,0,0,0,0,0
+Mara Crossing Luxury Camp,"J25F+QVM, Serena, Kenya",Safari River,Safari River Lodge,-1.3905396,35.0246786,4.8,0,0,0,0,0
+Kobe Mara,"Masai Mara Maasai Mara, Kenya",Safari River,Safari River Lodge,-1.3816969,35.2075177,4.8,0,0,0,0,0
+Ewaso Nyiro riverbank wild campsites,"4467+RQF, Kenya",Safari River,Safari River Lodge,-1.8879361,36.1144326,4.5,0,0,0,0,0
+Samburu Riverside Camp,"22 km from Archers Post Gate Samburu National Resere, Kenya",Safari River,Safari River Lodge,0.5649105,37.533055,4.5,0,0,0,0,0

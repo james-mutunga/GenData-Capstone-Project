@@ -1,32 +1,53 @@
-1. What is the problem you are solving?
+# 1. What is the problem you are solving?
 > Businesses or your audience care about problems. Make the problem clear and relatable
 
-**The Problem:** Noise from bars, nightclubs, transit stations and places of worship near waterfront resorts can spoil the peaceful getaway guests are paying for.
+**The Problem:** Travelers can't tell if a resort will be quiet just by looking at its overall Google rating. At inland lakes, nearby noise severely lowers guest satisfaction, but this isn't obvious to guests before they book.
 
-**The Question:** Does noise near a resort go with lower guest ratings, and does that depend on where the resort is: on the coast, at an inland lake, or on a safari river?
+**The Audience:** Travelers booking waterfront resorts in Kenya.
 
-2. What tools did you use?
-> Python? GeoPanadas? Google Big Query?
-> Tell your audience how you got the answer,  tools show your capability
-> Dive deep in this in your technical article
+**The Question:** What drives customer satisfaction at Kenyan resorts, and does the impact of noise depend on the water body type?
 
-- **Python (Pandas):** Cleaned and structured the resort dataset, counted noise sources, filtered results to places truly within 1 km, and checked the results.
+# 2. What tools did you use?
+> Python? GeoPandas? Google Big Query? Tell your audience how you got the answer, tools show your capability. Dive deep in this in your technical article
 
-- **Google Places API:** Collected 168 waterfront resorts across Kenya, their Google ratings, and the number of bars, nightclubs, transit stations and places of worship within 1 km of each one.
-- **Tableau:** Built the charts that compare noise and ratings across the three water body types (marine coast, inland lake, safari river).
+- **Google Places API:** Collected 168 waterfront resorts, their Google ratings, review counts, and noise sources within 1 km.
+- **Python (Pandas):** Cleaned the data and analyzed review text to categorize what guests mention most.
+- **Tableau:** Built a 4-part dashboard to visualize customer satisfaction.
 
-3. What insights did you or do you want to discover?/ What Solutions do you want to offer? Do People even need these solutions?
-> Don’t just say “dashboard done.”
-> Share the “aha!” moments, they matter more that the visuals
+# 3. What insights did you or do you want to discover? / What Solutions do you want to offer? Do People even need these solutions?
+> Don’t just say “dashboard done.” Share the “aha!” moments, they matter more that the visuals
 
-- **The "Aha!" Discovery:** Noisier resorts get lower ratings at inland lakes, but not at the coast.
+- **Dimension 1: Reputation** 
+  * **Question:** Which resorts have the highest and lowest satisfaction? 
+  * **Chart:** Top 10 & Bottom 10 Resorts (bar chart).
 
-- **Limits:** This shows a link, not a cause. A zero means "no recorded noise nearby", not "silent".
+- **Dimension 2: Drivers** 
+  * **Question:** What factors matter most to guests? 
+  * **Chart:** What guests mention most in reviews (Service, Food, Noise).
 
-4. How would a business or a community (for Social Impact Projects) benefit from your work?
-> Be specific. Think money saved, process improves, better decisions made
-> That’s your **real value**
+  *   **The "Why":** Guests frequently mention "Setting & views" (nature, scenery). This suggests that travelers to lake resorts expect a peaceful environment. When noise interrupts this expectation, the drop in ratings is severe, proving noise is a dealbreaker for this specific audience.
 
-- **For Inland Lake Resort Operators:** Ratings step down as nearby noise goes up, so noise is worth tracking as a factor in guest satisfaction. Operators can use the noise counts to see how they compare with similar resorts, and to judge whether sound insulation or quieter room placement is worth testing.
+- **Dimension 3: Pain Point** 
+  * **Question:** Does noise affect ratings differently depending on the water body? 
+  * **Chart:** Average rating by noise level and water body (line chart).
 
-- **For Travel Advisors:** Enables data-backed recommendations. Clients who value quiet can be matched with resorts that have few recorded noise sources nearby, instead of relying on vague marketing claims. At the coast, noise counts alone are not a good guide to ratings, so advisors should not use them there.
+- **Dimension 4: Destination** 
+  * **Question:** Where are these resorts located? 
+  * **Chart:** Map of Kenyan waterfront resorts.
+
+- **The "Aha!" Discovery (The Pain Point):** Noisier resorts get significantly lower ratings at inland lakes, but not at the coast. At the coast, noise doesn't seem to hurt the rating.
+
+- **The Context (Why this happens):** Travelers choose resorts based on their desired vibe. Coast travelers often expect and enjoy lively surroundings, which is why noise doesn't hurt coastal ratings. Inland lake travelers expect peace and nature. When they get noise instead, their satisfaction drops.
+
+- **The Evidence (Why lakes are different):** The data shows that "Setting & views" (nature, scenery, peace) is the 4th most mentioned topic in the reviews (129 mentions). When noise interrupts this expectation at an inland lake, satisfaction drops sharply (from 4.45 down to 4.14), whereas coastal ratings stay flat because the coastal vibe is already lively.
+
+- **Limits:** This shows a correlation, not a cause. A zero noise count means "no recorded noise nearby," not "silent."
+
+*Safari River Note: Safari River lodges are excluded from the line chart because they all recorded zero noise sources. Because they all fall into the single "Quiet" tier, they do not form a trend line.*
+
+# 4. How would a business or a community benefit from your work?
+> Be specific. Think money saved, process improves, better decisions made. That’s your real value
+
+- **For Travelers:** Get matched with resorts that fit your vibe (quiet lakes vs. lively coasts) instead of guessing based on a single rating.
+
+- **For Lake Resort Operators:** Proves that reducing noise will directly improve your Google rating and guest satisfaction.

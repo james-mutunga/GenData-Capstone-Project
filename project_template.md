@@ -12,9 +12,9 @@
 # 2. What tools did you use?
 > Python? GeoPandas? Google Big Query? Tell your audience how you got the answer, tools show your capability. Dive deep in this in your technical article
 
-- **Google Places API:** Collected 168 waterfront resorts, their Google ratings, review counts, and noise sources within 1 km.
-- **Python (Pandas):** Cleaned the data and analyzed review text to categorize what guests mention most.
-- **Tableau:** Built a 4-part dashboard to visualize customer satisfaction.
+- **Google Places API:** Collected 168 waterfront resorts, their Google ratings, review counts, and categorized nearby noise sources within 1 km.
+- **Python (Pandas):** Cleaned the data and used keyword analysis to categorize what guests mention most in their reviews.
+- **Tableau:** Built an interactive 3-part dashboard to visualize customer satisfaction.
 
 # 3. What insights did you or do you want to discover? / What Solutions do you want to offer? Do People even need these solutions?
 > Don’t just say “dashboard done.” Share the “aha!” moments, they matter more that the visuals
@@ -25,19 +25,15 @@
 - **Dimension 2: Drivers** 
   * **Question:** What factors matter most to guests? 
   * **Chart:** What guests mention most in reviews (Service, Food, Noise, etc.).
-- **Dimension 3: Pain Point** 
-  * **Question:** Does noise affect ratings differently depending on the water body? 
-  * **Chart:** Average rating by noise level and resort type.
-- **Dimension 4: Destination** 
+- **Dimension 3: Destination** 
   * **Question:** Where are these resorts located? 
   * **Chart:** Interactive map of Kenyan waterfront resorts.
 
-**The "Aha!" Discovery:** Noisier resorts get lower ratings at inland lakes, but not at the coast.
-**The Context (Why this happens):** Travelers choose resorts based on their desired vibe. Coast travelers often expect and enjoy lively surroundings, which is why noise doesn't hurt coastal ratings. Inland lake travelers expect peace and nature. When they get noise instead, their satisfaction drops.
-**Limits:** This shows a correlation, not a cause. A zero noise count means "no recorded noise nearby," not "silent."
+**The "Aha!" Discovery:** A single Google rating hides the real story. While Service and Food are the top drivers of satisfaction across all resorts, the interactive dashboard reveals that the "best" resort depends entirely on what the traveler is looking for. 
+**Limits:** The review text analysis uses keyword matching to count mentions, not sentiment analysis. A zero noise count means "no recorded noise nearby," not "silent."
 
 # 4. How would a business or a community benefit from your work?
 > Be specific. Think money saved, process improves, better decisions made. That’s your real value
 
 - **For Travelers:** Empowers them to filter by what matters most. They can easily find the Top 5 resorts for their specific destination (e.g., coastal or lakeside) without having to dig through hundreds of reviews.
-- **For Resort Operators:** Shows exactly what guests are talking about and proves that managing noise can directly improve ratings (especially for lakeside resorts).
+- **For Resort Operators:** Shows exactly what guests are talking about. Operators can use this to see if they are falling behind competitors on key drivers like Service or Food.

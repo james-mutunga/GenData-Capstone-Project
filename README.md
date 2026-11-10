@@ -28,7 +28,6 @@ The Tableau dashboard is structured around four key questions:
 *   `Data/` - Contains the master CSV dataset (`kenya_resorts_master.csv`) and any backup files.
 *   `resort_analysis.ipynb` - The Jupyter Notebook containing the Python code for data collection, cleaning, and exploratory analysis.
 *   `project_template.md` - The narrative summary of the project (Context, Audience, Insights, and Business Value).
-*   `Charts/` - Exported images of the visualizations used in the analysis.
 
 ## ⚠️ Limitations
 *   This analysis shows **correlation, not causation**. Guests rate resorts for many reasons.

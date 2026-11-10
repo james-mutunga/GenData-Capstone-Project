@@ -30,14 +30,6 @@ The Tableau dashboard is structured around four key questions:
 *   `project_template.md` - The narrative summary of the project (Context, Audience, Insights, and Business Value).
 *   `Charts/` - Exported images of the visualizations used in the analysis.
 
-## 🚀 How to Run the Notebook
-1. Clone this repository.
-2. Ensure you have Python installed, along with the required libraries (`pandas`, `googlemaps`, `python-dotenv`).
-3. You will need a **Google Maps API Key**. Create a `.env` file in the root directory and add: `GOOGLE_MAPS_API_KEY=your_api_key_here`.
-4. Open `resort_analysis.ipynb` in Jupyter Notebook or Jupyter Lab.
-
-*Note: The API collection cells (Sections C to F) require an API key and take several minutes to run. The analysis can be run from Section G using the saved dataset.*
-
 ## ⚠️ Limitations
 *   This analysis shows **correlation, not causation**. Guests rate resorts for many reasons.
 *   A noise count of zero means "no recorded noise sources nearby on Google," not absolute silence.

@@ -1,11 +1,13 @@
 # 1. What is the problem you are solving?
 > Businesses or your audience care about problems. Make the problem clear and relatable
 
-**The Problem:** Travelers can't tell if a resort will be quiet just by looking at its overall Google rating. At inland lakes, nearby noise severely lowers guest satisfaction, but this isn't obvious to guests before they book.
+**The Problem:** Travelers rely on a single Google rating to choose a **Kenyan waterfront resort**, but a single score hides the real story. Does a high rating come from great food, excellent service, or a peaceful environment? Without knowing *what* actually drives a **Kenyan waterfront resort's** score, travelers struggle to find a place that matches their personal priorities—whether they want a lively beach scene, or a quiet lakeside retreat.
 
-**The Audience:** Travelers booking waterfront resorts in Kenya.
+**The Audience:** Travelers booking **Kenyan waterfront resorts**.
 
-**The Question:** What drives customer satisfaction at Kenyan resorts, and does the impact of noise depend on the water body type?
+**The Decision:** How to choose a **Kenyan waterfront resort** based on their personal priorities (such as service, food, or noise) rather than just an overall rating.
+
+**The Question:** What drives customer satisfaction across different types of **Kenyan waterfront resorts** (coastal, lakeside, and riverside), and how can travelers use that data to find the best fit for them?
 
 # 2. What tools did you use?
 > Python? GeoPandas? Google Big Query? Tell your audience how you got the answer, tools show your capability. Dive deep in this in your technical article
@@ -18,36 +20,24 @@
 > Don’t just say “dashboard done.” Share the “aha!” moments, they matter more that the visuals
 
 - **Dimension 1: Reputation** 
-  * **Question:** Which resorts have the highest and lowest satisfaction? 
-  * **Chart:** Top 10 & Bottom 10 Resorts (bar chart).
-
+  * **Question:** Which resorts have the highest, middle, and lowest satisfaction? 
+  * **Chart:** Top 5, Middle 5, and Bottom 5 Resorts for each resort type.
 - **Dimension 2: Drivers** 
   * **Question:** What factors matter most to guests? 
-  * **Chart:** What guests mention most in reviews (Service, Food, Noise).
-
-  *   **The "Why":** Guests frequently mention "Setting & views" (nature, scenery). This suggests that travelers to lake resorts expect a peaceful environment. When noise interrupts this expectation, the drop in ratings is severe, proving noise is a dealbreaker for this specific audience.
-
+  * **Chart:** What guests mention most in reviews (Service, Food, Noise, etc.).
 - **Dimension 3: Pain Point** 
   * **Question:** Does noise affect ratings differently depending on the water body? 
-  * **Chart:** Average rating by noise level and water body (line chart).
-
+  * **Chart:** Average rating by noise level and resort type.
 - **Dimension 4: Destination** 
   * **Question:** Where are these resorts located? 
-  * **Chart:** Map of Kenyan waterfront resorts.
+  * **Chart:** Interactive map of Kenyan waterfront resorts.
 
-- **The "Aha!" Discovery (The Pain Point):** Noisier resorts get significantly lower ratings at inland lakes, but not at the coast. At the coast, noise doesn't seem to hurt the rating.
-
-- **The Context (Why this happens):** Travelers choose resorts based on their desired vibe. Coast travelers often expect and enjoy lively surroundings, which is why noise doesn't hurt coastal ratings. Inland lake travelers expect peace and nature. When they get noise instead, their satisfaction drops.
-
-- **The Evidence (Why lakes are different):** The data shows that "Setting & views" (nature, scenery, peace) is the 4th most mentioned topic in the reviews (129 mentions). When noise interrupts this expectation at an inland lake, satisfaction drops sharply (from 4.45 down to 4.14), whereas coastal ratings stay flat because the coastal vibe is already lively.
-
-- **Limits:** This shows a correlation, not a cause. A zero noise count means "no recorded noise nearby," not "silent."
-
-*Safari River Note: Safari River lodges are excluded from the line chart because they all recorded zero noise sources. Because they all fall into the single "Quiet" tier, they do not form a trend line.*
+**The "Aha!" Discovery:** Noisier resorts get lower ratings at inland lakes, but not at the coast.
+**The Context (Why this happens):** Travelers choose resorts based on their desired vibe. Coast travelers often expect and enjoy lively surroundings, which is why noise doesn't hurt coastal ratings. Inland lake travelers expect peace and nature. When they get noise instead, their satisfaction drops.
+**Limits:** This shows a correlation, not a cause. A zero noise count means "no recorded noise nearby," not "silent."
 
 # 4. How would a business or a community benefit from your work?
 > Be specific. Think money saved, process improves, better decisions made. That’s your real value
 
-- **For Travelers:** Get matched with resorts that fit your vibe (quiet lakes vs. lively coasts) instead of guessing based on a single rating.
-
-- **For Lake Resort Operators:** Proves that reducing noise will directly improve your Google rating and guest satisfaction.
+- **For Travelers:** Empowers them to filter by what matters most. They can easily find the Top 5 resorts for their specific destination (e.g., coastal or lakeside) without having to dig through hundreds of reviews.
+- **For Resort Operators:** Shows exactly what guests are talking about and proves that managing noise can directly improve ratings (especially for lakeside resorts).

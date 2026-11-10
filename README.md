@@ -1,15 +1,19 @@
 # Kenya Waterfront Resorts: What Drives Customer Satisfaction?
 
+## 🔗 Live Dashboard
+[Click here to view the interactive Tableau Dashboard](https://public.tableau.com/app/profile/james.mutunga/viz/KenyaWaterResorts/ResortNoiseDashboard#1)
+
 ## 📌 Project Overview
 Travelers pay premium prices for waterfront getaways in Kenya, but standard Google ratings don't tell the whole story. This project analyzes **168 waterfront resorts** across the Kenyan coast, inland lakes, and safari rivers to uncover what actually drives customer satisfaction. 
 
 The central finding is that **noise is a dealbreaker for lake resorts, but not for the coast**. Coast travelers often expect and enjoy lively surroundings, which is why noise doesn't hurt coastal ratings. Inland lake travelers expect peace and nature. When they get noise instead, their satisfaction drops significantly.
 
 ## 💡 Key Insights
-*   **The Drivers:** Service and Food are the most mentioned topics in reviews. However, noise remains a critical, hidden pain point.
-*   **The Pain Point:** Noisier resorts get significantly lower ratings at inland lakes (dropping from 4.45 to 4.14), but not at the coast. 
-*   **The Reputation:** We identified the Top 10 and Bottom 10 resorts (filtering for those with at least 50 reviews) to show travelers the best and worst extremes.
-*   **The Destination:** Interactive mapping shows the geographic spread of these resorts and their respective "vibes."
+*   **Interactive Exploration:** The Tableau dashboard allows users to filter by Resort Type (Coastal, Lakeside, Riverside). Clicking a resort on the chart or map instantly filters the other views.
+*   **The Drivers:** Service and Food are the most mentioned topics in reviews. However, noise remains a critical, hidden pain point for specific locations.
+*   **The Pain Point:** Noisier resorts get significantly lower ratings at inland lakes, but not at the coast. 
+*   **The Reputation:** We identified the Top 5, Middle 5, and Bottom 5 resorts *for each specific resort type* to show travelers the best, average, and worst extremes.
+*   **The Destination:** The map shows the geographic spread of these resorts, allowing travelers to see where their preferred vibe is located.
 
 ## 🛠️ Tools & Technologies
 *   **Google Places API:** Used to collect resort data, including guest ratings, review counts, review texts, and the number of nearby noise sources (bars, nightclubs, transit stations, and places of worship) within a 1 km radius.

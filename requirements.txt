@@ -3,3 +3,4 @@ pandas
 googlemaps
 python-dotenv
 ipykernel
+vaderSentiment

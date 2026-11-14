@@ -1,38 +1,49 @@
 # 1. What is the problem you are solving?
 > Businesses or your audience care about problems. Make the problem clear and relatable
 
-**The Problem:** Travelers rely on a single Google rating to choose a **Kenyan waterfront resort**, but that score hides what matters most to different guests. Without knowing which topics guests talk about (service, food, views), travelers struggle to find a place that matches their personal priorities.
+**The Problem:** Travelers struggle to choose the right hotel because a single Google rating doesn't tell the whole story. They don't know what the overall landscape of a region looks like, what the actual prices are, or which hotels are truly the best in a specific area without reading hundreds of reviews.
 
-**The Audience:** Travelers booking **Kenyan waterfront resorts**.
+**The Audience:** Travelers (business and pleasure) and travel agents.
 
-**The Decision:** How to choose a resort based on personal priorities rather than just an overall rating.
+**The Decision:** Which specific hotel to book in a chosen region of Kenya.
 
-**The Question:** What matters to guests across different resort types, and how can travelers use that data to find the best fit?
+**The Question:** How can travelers interactively filter resorts by region to instantly see the highest-rated options, real prices, and popularity, alongside the average price?
 
 # 2. What tools did you use?
 > Python? GeoPandas? Google Big Query? Tell your audience how you got the answer, tools show your capability. Dive deep in this in your technical article
 
-- **Google Places API:** Collected data for 168 waterfront resorts, including ratings and review texts.
-- **Python (Pandas):** Cleaned the data and used keyword analysis to flag which topics guests mention.
-- **Python (VADER):** Used NLP sentiment analysis to remove the few resorts whose reviews are overall negative.
-- **Tableau:** Built the interactive dashboard with a Priority filter.
+- **Google Places API:** Collected the data for 168 waterfront resorts, including ratings and review counts.
+- **Python (Pandas):** Cleaned the dataset, removed duplicates, and structured the data for visualization.
+- **GeoPandas:** Used to perform a spatial join, assigning each resort's latitude and longitude to its official Kenyan county.
+- **Apify (Google Hotels Scraper):** Used to fetch live pricing data (in USD and KES) and hotel classes. We successfully scraped 101 live prices, overcoming free-tier API limits by utilizing multiple accounts. 
+- **Tableau:** Used to build the interactive dashboard, including the county map, the Top N filter, the price charts, and the popularity scatterplot.
 
 # 3. What insights did you or do you want to discover? / What Solutions do you want to offer? Do People even need these solutions?
 > Don’t just say “dashboard done.” Share the “aha!” moments, they matter more that the visuals
 
-- **Dimension 1: Reputation** 
-  * **Question:** Among the highest, middle and lowest rated resorts, which ones do guests mention for a specific priority?
-  * **Chart:** Top 5, Middle 5 and Bottom 5 resorts for each water body type (ranked by overall rating), filtered to those whose reviews mention the selected priority.
-- **Dimension 2: Destination** 
-  * **Question:** Where are these resorts located? 
-  * **Chart:** Interactive map of Kenyan waterfront resorts.
+*The dashboard is built around four verifiable dimensions, allowing the user to freely explore the data:*
 
-**The "Aha!" Discovery:** A single Google rating hides the real story. The best resort depends on the traveler. The dashboard shows the highest-rated resorts, filtered to those where guests mention the chosen priority, and removes the few resorts whose reviews are overall negative.
+- **Dimension 1: Location (The "Where")** 
+  * **Question:** Where are the resorts located, and what is the overall landscape of this area?
+  * **Solution:** An interactive map of Kenya's counties. When the user clicks a county (like Lamu or Nakuru), the entire dashboard filters to show only the resorts in that area.
 
-**Limits:** Google returns only about 5 reviews per resort, and sentiment is scored on those reviews combined, so almost every resort scores positive. The filter shows whether guests mention a topic, not whether they praised it.
+- **Dimension 2: Reputation (The "How Good")** 
+  * **Question:** Which resorts are the highest rated in the area I selected?
+  * **Solution:** A Top N horizontal bar chart. The user can use a slider to see the Top 5, 10, or 20 resorts in the selected county, ranked by Google Rating. 
+
+- **Dimension 3: Pricing & Value (The "How Much")**
+  * **Question:** What is the average cost per night in the region I selected?
+  * **Solution:** A dynamic price chart showing the average base price (in KES) per county. Hovering over a bar reveals the Minimum and Maximum prices for that county.
+
+- **Dimension 4: Popularity (The "Hidden Gems vs. Tourist Giants")**
+  * **Question:** Which resorts are highly rated but have very few reviews, and which are highly rated with thousands of reviews? 
+  * **Solution:** A Scatterplot mapping Rating (Y-axis) against Review Count (X-axis). This reveals "Hidden Gems" (top-left: high rating, low reviews) and "Tourist Giants" (top-right: high rating, massive reviews).
+
+**The "Aha!" Discovery:** A single Google rating hides the real story. By combining geospatial filtering, dynamic ranking, real pricing, and popularity, we give travelers a complete picture. They can see that Narok (Masai Mara) has the highest average price by far, while the coast and lakes offer more affordable options. 
 
 # 4. How would a business or a community benefit from your work?
 > Be specific. Think money saved, process improves, better decisions made. That’s your real value
 
-- **For Travelers:** Helps them quickly shortlist the highest-rated resorts for their destination and priority, without digging through hundreds of reviews themselves.
-- **For Resort Operators:** Shows which topics, like Service or Food, come up most in guest reviews, so operators can compare themselves with similar resorts.
+- **For Travelers:** It saves them time and protects their money. Instead of reading endless reviews and opening 20 tabs to check prices, they can click their desired destination on the map and instantly see a ranked list of the highest-rated resorts alongside the average regional price.
+- **For Travel Agents:** It acts as a quick shortlisting tool. When a client says, "I want to go to Diani, and my budget is around 15,000 KES a night," the agent can instantly see the top-rated resorts in that area and filter for budget-appropriate options.
+- **For Resort Operators:** It provides competitive intelligence. They can see how they rank against other resorts in their specific county, and how their pricing compares to the regional average.

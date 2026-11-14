@@ -1,46 +1,49 @@
 # Kenya Waterfront Resorts: What Matters to Guests?
 
 ## 🔗 Live Dashboard
-[Click here to view the interactive Tableau Dashboard](https://public.tableau.com/app/profile/james.mutunga/viz/KenyaWaterResorts/ResortNoiseDashboard#1)
+[Click here to view the interactive Tableau Dashboard](https://public.tableau.com/app/profile/james.mutunga/viz/Kenya_Waterfront_Resorts_Dashboard/Dashboard?publish=yes)
 
 ## 📌 Project Overview
-Travelers choosing a waterfront resort in Kenya usually see only one Google rating, which doesn't show what guests care about. This project analyzes **168 waterfront resorts** across the Kenyan coast, inland lakes, and safari rivers to see what matters to guests.
+Travelers choosing a waterfront resort in Kenya usually see only one Google rating, which doesn't show the full picture. This project analyzes **168 waterfront resorts** across the Kenyan coast, inland lakes, and safari rivers to help travelers find the perfect stay.
 
-The central finding is that a single Google rating hides the real story. The "best" resort depends on what the traveler is looking for. The dashboard shows the highest-rated resorts, filtered to those where guests mention the chosen priority, and sentiment analysis removes the few resorts whose reviews are overall negative.
+The central finding is that a single Google rating hides the real story. By combining geospatial mapping with dynamic ranking, real pricing, and popularity metrics, travelers can instantly filter resorts by their chosen county and see the highest-rated options in that exact area.
 
 ## 💡 Key Insights
-*   **Interactive Exploration:** The Tableau dashboard allows users to filter by Resort Type (Marine Coast, Inland Lake, Safari River) and by their preferred Priority (Service, Food, Rooms, etc.). 
-*   **The Reputation:** The Top 5, Middle 5, and Bottom 5 resorts for each resort type, pre-ranked by overall Google rating. The Priority filter hides resorts whose reviews do not mention the chosen priority.
-*   **The Destination:** The map shows the geographic spread of these resorts, allowing travelers to see where their preferred vibe is located.
+*   **Interactive Exploration:** The Tableau dashboard allows users to click a specific Kenyan county on the map to instantly filter all the data.
+*   **Top N Ranking:** Users can adjust a slider to see the Top 5, 10, or 20 highest-rated resorts in their selected region.
+*   **Pricing Context:** Users can view the average price per night (in KES) per county. Hovering over the bars reveals the minimum and maximum prices. 
+*   **Hidden Gems vs. Tourist Giants:** A scatterplot reveals the relationship between a resort's rating and its review count, helping users find quiet gems or highly popular destinations.
 
 ## 🛠️ Tools & Technologies
-*   **Google Places API:** Used to collect resort data, including guest ratings, review counts, and review texts.
-*   **Python (Pandas):** Used for data cleaning and text analysis to categorize review mentions.
-*   **Python (VADER):** Used Natural Language Processing (NLP) to score each resort's combined reviews, removing the few resorts whose reviews are overall negative.
-*   **Tableau:** Used to build the final interactive dashboard.
-*   **Jupyter Notebook:** Documents the entire API collection, cleaning, and sentiment analysis process step-by-step.
+*   **Google Places API:** Used to collect real-world data for 168 waterfront resorts, including guest ratings and review counts.
+*   **Python (Pandas):** Used for initial data cleaning, formatting, and merging pricing data.
+*   **Python (GeoPandas):** Used to perform a spatial join, matching each resort's latitude and longitude to official Kenyan county polygons. This ensured 100% accuracy in regional assignments.
+*   **Apify (Google Hotels Scraper):** Used to fetch live pricing data. We successfully scraped 101 real prices out of 168 resorts.
+*   **Tableau:** Used to build the final interactive dashboard with 4 distinct charts.
 
-## 📊 The 2 Dimensions of the Dashboard
-The Tableau dashboard is structured around two key questions:
-1.  **Destination:** Where are these resorts located, and how can users filter them?
-2.  **Reputation:** Among the highest, middle, and lowest rated resorts, which ones do guests mention for the user's selected priority?
+## 📊 The 4 Dimensions of the Dashboard
+The Tableau dashboard is structured around four key questions:
+1.  **Destination:** Where are these resorts located? (Interactive Map)
+2.  **Reputation:** Which resorts are the highest-rated? (Top N Bar Chart)
+3.  **Pricing & Value:** What is the average cost per night? (Price Chart)
+4.  **Popularity:** Are they hidden gems or tourist giants? (Scatterplot)
 
 ## ▶️ How to Run
-1. Install the libraries: `pip install -r requirements.txt`
-2. To skip the Google API calls, run the **Fast Track** cell in the notebook. It loads `Data/kenya_resorts_final.csv`.
-3. To re-run the Google cells (Sections C to F), create a `.env` file containing `GOOGLE_MAPS_API_KEY=your_key_here`. The key is not included in this repository.
+1. Install the required libraries: `pip install -r requirements.txt`
+2. To skip the Google API calls, open the Jupyter Notebook and run the cells. It will load the final dataset.
+3. To view the dashboard, open the Tableau file and explore the map.
 
 ## 📂 Repository Structure
-*   `Data/` - Contains the master CSV dataset (`kenya_resorts_final.csv`) and any backup files.
-*   `resort_analysis.ipynb` - The Jupyter Notebook containing the Python code for data collection, cleaning, and analysis.
-*   `project_template.md` - The narrative summary of the project (Context, Audience, Insights, and Business Value).
+*   `Data/` - Contains the final master CSV dataset (`kenya_resorts_clean.csv`) and the Kenyan county shapefiles.
+*   `resort_analysis.ipynb` - The Jupyter Notebook containing the Python code for API data collection, cleaning, GeoPandas spatial joins, and pricing scraping.
+*   `project_template.md` - The narrative summary of the project.
+*   `README.md` - This file.
 
 ## ⚠️ Limitations
-*   This analysis shows **correlation, not causation**. Guests rate resorts for many reasons.
-*   The sentiment analysis is **document-level**. It scores the overall review as positive or negative, but does not perform sentence-level (Aspect-Based) analysis to isolate the exact sentence mentioning the specific priority.
-*   Google returns only about 5 reviews per resort, so the text analysis is a sample.
-*   Almost every resort scores positive (163 of 168), so the filter mostly shows whether guests *mention* a topic, not whether they praised it.
+*   Google Places API does not provide exact real-time pricing or complete amenity data. 
+*   While we scraped 101 live prices (60% of the dataset), some smaller guesthouses do not list their prices on Google Hotels, resulting in empty values for 67 resorts. Tableau handles these nulls automatically.
+*   The analysis shows correlation between location and rating, but does not prove causation for why guests rate resorts the way they do.
 
 ## 🚀 Future Improvements
-*   **Aspect-Based Sentiment Analysis:** Upgrade the NLP model to analyze sentiment at the sentence level. This would allow us to isolate the exact sentence mentioning "Food" or "Service" to ensure that specific aspect was positive, rather than just the overall review.
-*   **Live API Integration:** Instead of a static CSV, the dashboard could connect directly to the Google Places API for live updates.
+*   Integrate a more robust hotel scraping API to pull real-time pricing for 100% of the resorts.
+*   Upgrade the NLP text analysis to summarize the actual review text, telling the user exactly *why* a hotel is highly rated.

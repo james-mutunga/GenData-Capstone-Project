@@ -2,7 +2,7 @@
 
 ## 🔗 Live Dashboards
 *   **[Interactive Tableau Dashboard](https://public.tableau.com/app/profile/james.mutunga/viz/Kenya_Waterfront_Resorts_Dashboard/Dashboard)** (Data exploration)
-*   **[Streamlit Storytelling App](YOUR_STREAMLIT_URL_HERE)** (The full narrative) <!-- Replace with your live link after deployment -->
+*   **[Streamlit Storytelling App](https://gendata-capstone-project-pwhzhknvfsdeitztyethbe.streamlit.app/)**
 
 ## 📌 Project Overview
 Travelers choosing a waterfront resort in Kenya usually see only one Google rating, which doesn't show the full picture. This project analyzes **168 waterfront resorts** across the Kenyan coast, inland lakes, and safari rivers to help travelers find the perfect stay.

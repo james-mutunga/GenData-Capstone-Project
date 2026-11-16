@@ -169,6 +169,14 @@ with tab_rep:
     st.image("images/bar_chart.png", use_container_width=True)
 
 # TAB 4: PRICING
+with tab_price:
+    st.markdown("<h2>Decoding the Price Tag</h2>", unsafe_allow_html=True)
+    st.markdown("""
+    Waterfront resorts in Kenya do not have a flat rate. The price changes wildly depending on the region, the season, and whether you are eating breakfast by the Indian Ocean or deep in the Masai Mara.
+    <br><br>
+    Here is what you need to know before you look at the numbers:
+    """, unsafe_allow_html=True)
+
     col1, col2, col3 = st.columns(3)
     with col1:
         st.markdown("""
@@ -191,6 +199,17 @@ with tab_rep:
             <p>We found live prices for 96 resorts. The other 72 didn't list their prices on Google Hotels. These are often smaller guesthouses or self-catering villas.</p>
         </div>
         """, unsafe_allow_html=True)
+
+    st.markdown("<br><h2>Regional Averages</h2>", unsafe_allow_html=True)
+    st.markdown("""
+    The chart below shows the lowest and average price per night (in Kenyan Shillings) for the regions we found data for. 
+    <br><br>
+    Look at the massive spike for <span class='accent'>Narok (Masai Mara)</span>. It averages 87,125 KES, which is <strong>roughly three to four times the coastal averages.</strong>
+    """, unsafe_allow_html=True)
+    
+    st.image("images/price_chart.png", use_container_width=True)
+    
+    st.info("Note: Isiolo and Kajiado have no listed prices in this dataset.")
 
 # TAB 5: POPULARITY
 with tab_pop:

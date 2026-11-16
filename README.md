@@ -10,15 +10,15 @@ The central finding is that a single Google rating hides the real story. By comb
 
 ## 💡 Key Insights
 *   **Interactive Exploration:** The Tableau dashboard allows users to click a specific Kenyan county on the map to instantly filter all the data.
-*   **Top N Ranking:** Users can adjust a slider to see the Top 5, 10, or 20 highest-rated resorts in their selected region.
-*   **Pricing Context:** Users can view the average price per night (in KES) per county. Hovering over the bars reveals the minimum and maximum prices. 
+*   **Top N Ranking:** Users can adjust a slider to see the Top 5, 10, or 20 highest-rated resorts in their selected region. (Note: To avoid ratings based on only a few reviews, the Top N chart only includes resorts with at least 50 reviews).
+*   **Pricing Context:** Users can view the average price per night (in KES) per county. Hovering over the bars reveals the minimum and maximum prices. Averages use only resorts with a listed price.
 *   **Hidden Gems vs. Tourist Giants:** A scatterplot reveals the relationship between a resort's rating and its review count, helping users find quiet gems or highly popular destinations.
 
 ## 🛠️ Tools & Technologies
 *   **Google Places API:** Used to collect real-world data for 168 waterfront resorts, including guest ratings and review counts.
 *   **Python (Pandas):** Used for initial data cleaning, formatting, and merging pricing data.
-*   **Python (GeoPandas):** Used to perform a spatial join, matching each resort's latitude and longitude to official Kenyan county polygons. This ensured 100% accuracy in regional assignments.
-*   **Apify (Google Hotels Scraper):** Used to fetch live pricing data. We successfully scraped 101 real prices out of 168 resorts.
+*   **Python (GeoPandas):** Used to perform a spatial join, assigning each resort's latitude and longitude to its official Kenyan county, correcting the few that did not match.
+*   **Apify (Google Hotels Scraper):** Used to fetch live pricing data. We successfully scraped 96 real prices out of 168 resorts (57%), with the rest left blank as they do not list prices on Google Hotels.
 *   **Tableau:** Used to build the final interactive dashboard with 4 distinct charts.
 
 ## 📊 The 4 Dimensions of the Dashboard
@@ -30,7 +30,8 @@ The Tableau dashboard is structured around four key questions:
 
 ## ▶️ How to Run
 1. Install the required libraries: `pip install -r requirements.txt`
-2. To skip the Google API calls, open the Jupyter Notebook and run the cells. It will load the final dataset.
+2. To skip the Google and Apify calls (Sections B to F and K), load the dataset directly:
+   `df = pd.read_csv("Data/kenya_resorts_clean.csv")`
 3. To view the dashboard, open the Tableau file and explore the map.
 
 ## 📂 Repository Structure
@@ -41,8 +42,8 @@ The Tableau dashboard is structured around four key questions:
 
 ## ⚠️ Limitations
 *   Google Places API does not provide exact real-time pricing or complete amenity data. 
-*   While we scraped 101 live prices (60% of the dataset), some smaller guesthouses do not list their prices on Google Hotels, resulting in empty values for 67 resorts. Tableau handles these nulls automatically.
-*   The analysis shows correlation between location and rating, but does not prove causation for why guests rate resorts the way they do.
+*   While we scraped 96 live prices (57% of the dataset), some smaller guesthouses do not list their prices on Google Hotels, resulting in empty values for 72 resorts. Tableau handles these nulls automatically.
+*   The analysis shows correlation between location and rating, but does not prove causation for why guests rate the way they do.
 
 ## 🚀 Future Improvements
 *   Integrate a more robust hotel scraping API to pull real-time pricing for 100% of the resorts.

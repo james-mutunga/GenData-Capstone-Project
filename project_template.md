@@ -14,8 +14,8 @@
 
 - **Google Places API:** Collected the data for 168 waterfront resorts, including ratings and review counts.
 - **Python (Pandas):** Cleaned the dataset, removed duplicates, and structured the data for visualization.
-- **GeoPandas:** Used to perform a spatial join, assigning each resort's latitude and longitude to its official Kenyan county.
-- **Apify (Google Hotels Scraper):** Used to fetch live pricing data (in USD and KES) and hotel classes. We successfully scraped 101 live prices, overcoming free-tier API limits by utilizing multiple accounts. 
+- **GeoPandas:** Used to perform a spatial join, assigning each resort's latitude and longitude to its official Kenyan county, correcting the few that did not match.
+- **Apify (Google Hotels Scraper):** Used to fetch live pricing data (in USD and KES) and hotel classes. Prices were scraped in batches because of free-tier limits. 
 - **Tableau:** Used to build the interactive dashboard, including the county map, the Top N filter, the price charts, and the popularity scatterplot.
 
 # 3. What insights did you or do you want to discover? / What Solutions do you want to offer? Do People even need these solutions?
@@ -30,10 +30,12 @@
 - **Dimension 2: Reputation (The "How Good")** 
   * **Question:** Which resorts are the highest rated in the area I selected?
   * **Solution:** A Top N horizontal bar chart. The user can use a slider to see the Top 5, 10, or 20 resorts in the selected county, ranked by Google Rating. 
+  * **Methodology Note:** To avoid ratings based on only a few reviews, the Top N chart only includes resorts with at least 50 reviews. Ties are broken by review count.
 
 - **Dimension 3: Pricing & Value (The "How Much")**
   * **Question:** What is the average cost per night in the region I selected?
   * **Solution:** A dynamic price chart showing the average base price (in KES) per county. Hovering over a bar reveals the Minimum and Maximum prices for that county.
+  * **Methodology:** We successfully scraped 96 live prices (57% of the dataset). The remaining 72 resorts did not have a price listed on Google Hotels for the selected dates. Tableau automatically excludes these empty values (`NaN`) when calculating the county average. Averages use only resorts with a listed price.
 
 - **Dimension 4: Popularity (The "Hidden Gems vs. Tourist Giants")**
   * **Question:** Which resorts are highly rated but have very few reviews, and which are highly rated with thousands of reviews? 

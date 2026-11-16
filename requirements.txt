@@ -1,6 +1,7 @@
 requests
 pandas
+geopandas
+apify-client
 googlemaps
 python-dotenv
-vaderSentiment
 ipykernel

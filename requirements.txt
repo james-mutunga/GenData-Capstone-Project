@@ -5,3 +5,4 @@ apify-client
 googlemaps
 python-dotenv
 ipykernel
+vaderSentiment

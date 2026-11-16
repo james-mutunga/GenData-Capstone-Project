@@ -11,7 +11,7 @@ The central finding is that a single Google rating hides the real story. By comb
 ## 💡 Key Insights
 *   **Interactive Exploration:** The Tableau dashboard allows users to click a specific Kenyan county on the map to instantly filter all the data.
 *   **Top N Ranking:** Users can adjust a slider to see the Top 5, 10, or 20 highest-rated resorts in their selected region. (Note: To avoid ratings based on only a few reviews, the Top N chart only includes resorts with at least 50 reviews).
-*   **Pricing Context:** Users can view the minumum and average price per night (in KES) per region. Hovering over the bars reveals the minimum prices. Averages use only resorts with a listed price.
+*   **Pricing Context:** Users can view the minimum and average price per night (in KES) per region. Hovering over the bars reveals the minimum prices. Averages use only resorts with a listed price.
 *   **Hidden Gems vs. Tourist Giants:** A scatterplot reveals the relationship between a resort's rating and its review count, helping users find hidden gems or highly popular destinations.
 
 ## 🛠️ Tools & Technologies
@@ -25,12 +25,12 @@ The central finding is that a single Google rating hides the real story. By comb
 The Tableau dashboard is structured around four key questions:
 1.  **Destination:** Where are these resorts located? (Interactive Map)
 2.  **Reputation:** Which resorts are the highest-rated? (Top N Bar Chart)
-3.  **Pricing & Value:** What is the average and minimum cost per night? (Price Chart)
+3.  **Pricing & Value:** What is the minimum and average cost per night? (Price Chart)
 4.  **Popularity:** Are they hidden gems or tourist giants? (Scatterplot)
 
 ## ▶️ How to Run
 1. Install the required libraries: `pip install -r requirements.txt`
-2. To skip the Google and Apify calls (Sections B to F and K), load the dataset directly:
+2. To skip the Google and Apify calls (Sections B, C, D, K), load the dataset directly:
    `df = pd.read_csv("Data/kenya_resorts_clean.csv")`
 3. To view the dashboard, open the Tableau file and explore the map.
 
@@ -39,10 +39,12 @@ The Tableau dashboard is structured around four key questions:
 *   `resort_analysis.ipynb` - The Jupyter Notebook containing the Python code for API data collection, cleaning, GeoPandas spatial joins, and pricing scraping.
 *   `project_template.md` - The narrative summary of the project.
 *   `README.md` - This file.
+*   `requirements.txt` - List of required Python packages.
 
 ## ⚠️ Limitations
 *   Google Places API does not provide exact real-time pricing or complete amenity data. 
 *   While we scraped 96 live prices (57% of the dataset), some smaller guesthouses do not list their prices on Google Hotels, resulting in empty values for 72 resorts. Tableau handles these nulls automatically.
+*   **County Coverage:** The dataset includes 3 resorts in Kajiado and Isiolo. These are located along the Athi and Ewaso Nyiro rivers. They are kept in the dataset to ensure comprehensive waterfront coverage.
 *   The analysis shows correlation between location and rating, but does not prove causation for why guests rate the way they do.
 
 ## 🚀 Future Improvements

@@ -25,7 +25,7 @@
 
 - **Dimension 1: Location (The "Where")** 
   * **Question:** Where are the resorts located, and what is the overall landscape of this area?
-  * **Solution:** An interactive map of Kenya's counties. When the user clicks a county (like Lamu or Nakuru), the entire dashboard filters to show only the resorts in that area.
+  * **Solution:** An interactive map of Kenya's 9 resort-hosting counties. When the user clicks a county (like Lamu, Nakuru, Kajiado, or Isiolo), the entire dashboard filters to show only the resorts in that area. Kajiado and Isiolo are included as they host riverside resorts (Athi and Ewaso Nyiro rivers).
 
 - **Dimension 2: Reputation (The "How Good")** 
   * **Question:** Which resorts are the highest rated in the area I selected?
@@ -33,8 +33,8 @@
   * **Methodology Note:** To avoid ratings based on only a few reviews, the Top N chart only includes resorts with at least 50 reviews. Ties are broken by review count.
 
 - **Dimension 3: Pricing & Value (The "How Much")**
-  * **Question:** What is the average cost per night in the region I selected?
-  * **Solution:** A dynamic price chart showing the average base price (in KES) per county. Hovering over a bar reveals the Minimum and Maximum prices for that county.
+  * **Question:** What is the minimum and average cost per night in the region I selected?
+  * **Solution:** A dynamic price chart showing the minimum and average base price (in KES) per county. Hovering over a bar reveals the Minimum and Maximum prices for that county.
   * **Methodology:** We successfully scraped 96 live prices (57% of the dataset). The remaining 72 resorts did not have a price listed on Google Hotels for the selected dates. Tableau automatically excludes these empty values (`NaN`) when calculating the county average. Averages use only resorts with a listed price.
 
 - **Dimension 4: Popularity (The "Hidden Gems vs. Tourist Giants")**

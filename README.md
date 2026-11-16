@@ -11,8 +11,8 @@ The central finding is that a single Google rating hides the real story. By comb
 ## 💡 Key Insights
 *   **Interactive Exploration:** The Tableau dashboard allows users to click a specific Kenyan county on the map to instantly filter all the data.
 *   **Top N Ranking:** Users can adjust a slider to see the Top 5, 10, or 20 highest-rated resorts in their selected region. (Note: To avoid ratings based on only a few reviews, the Top N chart only includes resorts with at least 50 reviews).
-*   **Pricing Context:** Users can view the average price per night (in KES) per county. Hovering over the bars reveals the minimum and maximum prices. Averages use only resorts with a listed price.
-*   **Hidden Gems vs. Tourist Giants:** A scatterplot reveals the relationship between a resort's rating and its review count, helping users find quiet gems or highly popular destinations.
+*   **Pricing Context:** Users can view the minumum and average price per night (in KES) per region. Hovering over the bars reveals the minimum prices. Averages use only resorts with a listed price.
+*   **Hidden Gems vs. Tourist Giants:** A scatterplot reveals the relationship between a resort's rating and its review count, helping users find hidden gems or highly popular destinations.
 
 ## 🛠️ Tools & Technologies
 *   **Google Places API:** Used to collect real-world data for 168 waterfront resorts, including guest ratings and review counts.
@@ -25,7 +25,7 @@ The central finding is that a single Google rating hides the real story. By comb
 The Tableau dashboard is structured around four key questions:
 1.  **Destination:** Where are these resorts located? (Interactive Map)
 2.  **Reputation:** Which resorts are the highest-rated? (Top N Bar Chart)
-3.  **Pricing & Value:** What is the average cost per night? (Price Chart)
+3.  **Pricing & Value:** What is the average and minimum cost per night? (Price Chart)
 4.  **Popularity:** Are they hidden gems or tourist giants? (Scatterplot)
 
 ## ▶️ How to Run

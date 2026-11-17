@@ -35,7 +35,6 @@ The analysis is organized around four questions:
 ## Repository Structure
 - `Data/` — contains the final master dataset (`kenya_resorts_clean.csv`) and the Kenyan county shapefiles.
 - `images/` — contains the chart images displayed in the Streamlit app.
-- `.streamlit/` — contains the Streamlit theme configuration.
 - `resort_analysis.ipynb` — notebook for API data collection, cleaning, geospatial analysis, pricing collection, and review-theme analysis.
 - `app.py` — Streamlit storytelling application.
 - `project_template.md` — project narrative and business value summary.

@@ -1,58 +1,54 @@
 # Kenya Waterfront Resorts: What Matters to Guests?
 
-## 🔗 Live Dashboards
-*   **[Interactive Tableau Dashboard](https://public.tableau.com/app/profile/james.mutunga/viz/Kenya_Waterfront_Resorts_Dashboard/Dashboard)** (Data exploration)
-*   **[Streamlit Storytelling App](https://gendata-capstone-project-pwhzhknvfsdeitztyethbe.streamlit.app/)**
+## Live Dashboards
+- **[Interactive Tableau Dashboard](https://public.tableau.com/app/profile/james.mutunga/viz/Kenya_Waterfront_Resorts_Dashboard/Dashboard)** — explore the data.
+- **[Streamlit Storytelling App](https://gendata-capstone-project-pwhzhknvfsdeitztyethbe.streamlit.app/)**
 
-## 📌 Project Overview
-Travelers choosing a waterfront resort in Kenya usually see only one Google rating, which doesn't show the full picture. This project analyzes **168 waterfront resorts** across the Kenyan coast, inland lakes, and safari rivers to help travelers find the perfect stay.
+## Project Overview
+Travelers choosing a waterfront resort in Kenya usually see a single Google rating, which does not show the full picture. This project analyzes **168 waterfront resorts** across the Kenyan coast, inland lakes, and safari rivers to help travelers compare destinations.
 
-The central finding is that a single Google rating hides the real story. By combining geospatial mapping with dynamic ranking, real pricing, and popularity metrics, travelers can instantly filter resorts by their chosen county and see the highest-rated options in that exact area.
+A single rating can hide important differences. By combining geospatial mapping, rating-based rankings, collected pricing, and review-count data, the project lets travelers filter resorts by county and explore the highest-rated options in that area.
 
-## 💡 Key Insights
-*   **Interactive Exploration:** The dashboard allows users to click a specific Kenyan county on the map to instantly filter all the data.
-*   **Top N Ranking:** Users can adjust a slider to see the Top 5, 10, or 20 highest-rated resorts in their selected region. (Note: To avoid ratings based on only a few reviews, the Top N chart only includes resorts with at least 50 reviews).
-*   **Pricing Context:** Users can view the minimum and average price per night (in KES) per region. Averages use only resorts with a listed price.
-*   **Hidden Gems vs. Tourist Giants:** A scatterplot reveals the relationship between a resort's rating and its review count, helping users find hidden gems or highly popular destinations.
+## Key Insights
+- **Interactive exploration:** Select a Kenyan county on the map to filter the dashboard.
+- **Top N ranking:** Choose to view the Top 5, 10, or 20 highest-rated resorts in the selected county. To reduce the influence of ratings based on very few reviews, this chart includes only resorts with at least 50 reviews.
+- **Pricing context:** Compare the minimum and average collected price per night (KES) by county. County averages use only resorts with a returned price.
+- **Hidden gems vs. tourist giants:** Explore the relationship between a resort's Google rating and its review count. This helps distinguish highly rated resorts with relatively few reviews from highly rated, widely reviewed resorts.
 
-## 🛠️ Tools & Technologies
-*   **Google Places API:** Used to collect real-world data for 168 waterfront resorts, including guest ratings and review counts.
-*   **Python (Pandas):** Used for initial data cleaning, formatting, and merging pricing data.
-*   **Python (GeoPandas):** Used to perform a spatial join, assigning each resort's latitude and longitude to its official Kenyan county, correcting the few that did not match.
-*   **Apify (Google Hotels Scraper):** Used to fetch live pricing data. We successfully scraped 96 real prices out of 168 resorts (57%), with the rest left blank as they do not list prices on Google Hotels.
-*   **Tableau:** Used to build the final interactive dashboard with 4 distinct charts.
-*   **Streamlit & Altair:** Used to build the storytelling web application and interactive data visualizations.
+## Tools & Technologies
+- **Google Places API:** Collected Google ratings and review counts for 168 waterfront resorts.
+- **Python (Pandas):** Used for data cleaning, formatting, deduplication, and merging pricing data.
+- **Python (GeoPandas):** Performed a spatial join to assign resort coordinates to Kenyan county boundaries, with manual corrections where needed.
+- **Apify (Google Hotels Scraper):** Collected pricing information for 96 of the 168 resorts (57%) for the dates searched. No price was returned for the remaining 72 resorts. These collected prices are a snapshot and may change; they are not a continuous real-time feed.
+- **Python (VADER and keyword-based aspect analysis):** Examined review text for positive mentions of themes such as views, service, food, rooms, and amenities, then assigned each resort its most frequently mentioned positive theme. Resorts without a matching positive mention are labelled “General”.
+- **Tableau:** Built the interactive dashboard with four analytical views.
+- **Streamlit:** Built the storytelling app, which presents the findings and embeds the Tableau dashboard.
 
-## 📊 The 4 Dimensions of the Dashboard
-The analysis is structured around four key questions:
-1.  **Destination:** Where are these resorts located? (Interactive Map)
-2.  **Reputation:** Which resorts are the highest-rated? (Top N Bar Chart)
-3.  **Pricing & Value:** What is the minimum and average cost per night? (Price Chart)
-4.  **Popularity:** Are they hidden gems or tourist giants? (Scatterplot)
+## The Four Dimensions of the Dashboard
+The analysis is organized around four questions:
 
-## ▶️ How to Run
-1. Install the required libraries: `pip install -r requirements.txt`
-2. To skip the Google and Apify API calls (Sections B, C, D, J in the notebook), load the dataset directly:
-   `df = pd.read_csv("Data/kenya_resorts_clean.csv")`
-3. To run the Streamlit storytelling app: `streamlit run app.py`
-4. To view the dashboard, use the live Tableau dashboard link.
+1. **Destination:** Where are the resorts located? — interactive county map.
+2. **Reputation:** Which resorts have the highest ratings? — Top N bar chart.
+3. **Pricing & Value:** What are the minimum and average collected prices per night? — price chart.
+4. **Popularity:** How do ratings relate to review counts? — scatterplot.
 
-## 📂 Repository Structure
-*   `Data/` - Contains the final master CSV dataset (`kenya_resorts_clean.csv`) and the Kenyan county shapefiles.
-*   `images/` - Contains the static screenshots of the Tableau charts (used for reference).
-*   `.streamlit/` - Contains the `config.toml` theme settings for the Streamlit app.
-*   `resort_analysis.ipynb` - The Jupyter Notebook containing the Python code for API data collection, cleaning, GeoPandas spatial joins, and pricing scraping.
-*   `app.py` - The Streamlit storytelling web application.
-*   `project_template.md` - The narrative summary of the project.
-*   `README.md` - This file.
-*   `requirements.txt` - List of required Python packages.
+## Repository Structure
+- `Data/` — contains the final master dataset (`kenya_resorts_clean.csv`) and the Kenyan county shapefiles.
+- `images/` — contains the chart images displayed in the Streamlit app.
+- `.streamlit/` — contains the Streamlit theme configuration.
+- `resort_analysis.ipynb` — notebook for API data collection, cleaning, geospatial analysis, pricing collection, and review-theme analysis.
+- `app.py` — Streamlit storytelling application.
+- `project_template.md` — project narrative and business value summary.
+- `README.md` — project documentation.
+- `requirements.txt` — required Python packages.
 
-## ⚠️ Limitations
-*   Google Places API does not provide exact real-time pricing or complete amenity data. 
-*   While we scraped 96 live prices (57% of the dataset), some smaller guesthouses do not list their prices on Google Hotels, resulting in empty values for 72 resorts. Tableau and Altair handle these nulls automatically.
-*   **County Coverage:** The dataset includes 3 resorts in Kajiado and Isiolo. These are located along the Athi and Ewaso Nyiro rivers. They are kept in the dataset to ensure comprehensive waterfront coverage.
-*   The analysis shows correlation between location and rating, but does not prove causation for why guests rate the way they do.
+## Limitations
+- Google Places data does not provide complete pricing or amenity information.
+- Pricing was returned for 96 resorts (57%) for the dates searched. No price was returned for the other 72 resorts; missing prices are excluded from county price averages.
+- **County coverage:** The dataset includes resorts in Kajiado and Isiolo along the Athi and Ewaso Nyiro rivers, respectively, as part of the project's wider definition of waterfront destinations.
+- The review-theme labels use keyword matching and VADER sentiment at the clause level. They are indicative labels, not a full summary of guest reviews.
+- The analysis describes relationships in the collected data; it does not establish that location causes a particular rating.
 
-## 🚀 Future Improvements
-*   Integrate a more robust hotel scraping API to pull real-time pricing for 100% of the resorts.
-*   Upgrade the NLP text analysis to summarize the actual review text, telling the user exactly *why* a hotel is highly rated.
+## Future Improvements
+- Collect pricing across more dates and from additional reliable sources to improve coverage.
+- Develop a richer review-analysis approach that summarizes the reasons guests praise or criticize each resort.

@@ -93,6 +93,13 @@ with tab_intro:
         </div>
         """, unsafe_allow_html=True)
 
+    st.markdown("<br><h2>Who is this for?</h2>", unsafe_allow_html=True)
+    st.markdown("""
+    *   **For Travelers:** Stop opening 20 tabs to compare prices and reviews. See the landscape instantly and protect your money.
+    *   **For Travel Agents:** Quickly shortlist top-rated resorts in a specific county based on a client's budget.
+    *   **For Resort Operators:** See how you rank against competitors in your exact region and compare your pricing to the regional average.
+    """, unsafe_allow_html=True)
+
 # TAB 2: PROCESS & DATA
 with tab_process:
     st.markdown("<h2>How I Built the Dataset</h2>", unsafe_allow_html=True)
